@@ -85,71 +85,92 @@
 
 // let ageing_test = Number(prompt("Please, Enter your age: "));
 
-// if (ageing_test <= 10){
-//     alert("You are a child.");
+// switch (true) {
+//     case (ageing_test <= 10 && ageing_test >= 0):
+//         alert("You are a child.");
+//         break;
+
+//     case (ageing_test >= 18 && ageing_test < 60):
+//         alert("You are a teenager.");
+//         break;
+
+//     case (ageing_test >= 60):
+//         alert("Too old!");
+//         break;
+
+//     default:
+//         alert("Invalid input. Please enter a valid number.");
+//         break;
 // }
-// else if (ageing_test >= 18 && ageing_test < 60){
-//     alert("You are a teenager.");
-// }
-// else if (ageing_test >= 60){
-//     alert("Too old !.");
-// }
-// else{
-//     alert("Invalid input. Please enter a valid number.");
-// }
+
 
 // // Exercise: 4
 
 // let marks = prompt(`Please, Enter your marks: 'eg. A, B, C'`);
 
-// if (marks === "A"){
-//     alert("Excellent");
+// if (marks){
+//     switch (marks) {
+//         case ("A"):
+//             alert("Excellent");
+//             break;
+//         case ("B"):
+//             alert("Good");
+//         case ("C"):
+//             alert("Qoniqarli");
+//             break;
+//         default:
+//             alert("Invalid input. Please enter a valid mark.");
+//             break;
+//     }
 // }
-// else if (marks === "B"){
-//     alert("Good");
-// }
-// else if (marks === "C"){
-//     alert("Average");
-// }
-// else {
-//     alert("Invalid input.");
-// }
+
 
 // // Exercise: 5
 
 // let traffic_light = prompt(`Please, Enter the color of the traffic light: 'eg. Red, Yellow, Green'`);
-// if (traffic_light === "Red"){
-//     alert("Stop");
+// if (traffic_light){
+//     switch (traffic_light) {
+//         case ("Red"):
+//             console.log("Stop");
+//             break;
+//         case ("Yellow"):
+//             console.log("Ready");
+//             break;
+//         case ("Green"):
+//             console.log("Go");
+//             break
+//         default:
+//             console.log("Invalid input. Please enter a valid color.");
+//             break;
+//     }
 // }
-// else if (traffic_light === "Yellow"){
-//     alert("Ready");
-// }
-// else if (traffic_light === "Green"){
-//     alert("Go");
-// }
-// else {
-//     alert("Invalid input.");
-// }
+
 
 // // Exercise: 6
 
 // let user_input_number_1 = Number(prompt("Enter a first number: "));
 // let user_input_number_2 = Number(prompt("Enter a second number: "));
 
-// let operation = prompt("Enter the operation: 'eg. +, -, *, /'");
+// let operation = prompt("Enter the operation: 'e.g., +, -, *, /'");
 
-// if (operation === "+"){
-//     alert(`The sum of ${user_input_number_1} and ${user_input_number_2} is ${user_input_number_1 + user_input_number_2}`);
-// }
-// else if (operation === "-"){
-//     alert(`The difference of ${user_input_number_1} and ${user_input_number_2} is ${user_input_number_1 - user_input_number_2}`);
-// }
-// else if (operation === "*"){
-//     alert(`The product of ${user_input_number_1} and ${user_input_number_2} is ${user_input_number_1 * user_input_number_2}`);
-// }
-// else if (operation === "/"){
-//     alert(`The division of ${user_input_number_1} and ${user_input_number_2} is ${user_input_number_1 / user_input_number_2}`);
-// }
-// else {
-//     alert("Invalid input.");
+// switch (operation) {
+//     case "+":
+//         alert(`The sum of ${user_input_number_1} and ${user_input_number_2} is ${user_input_number_1 + user_input_number_2}`);
+//         break;
+
+//     case "-":
+//         alert(`The difference of ${user_input_number_1} and ${user_input_number_2} is ${user_input_number_1 - user_input_number_2}`);
+//         break;
+
+//     case "*":
+//         alert(`The product of ${user_input_number_1} and ${user_input_number_2} is ${user_input_number_1 * user_input_number_2}`);
+//         break;
+
+//     case "/":
+//         alert(`The division of ${user_input_number_1} and ${user_input_number_2} is ${user_input_number_1 / user_input_number_2}`);
+//         break;
+
+//     default:
+//         alert("Invalid input.");
+//         break;
 // }
