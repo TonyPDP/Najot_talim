@@ -148,29 +148,29 @@
 
 // // Exercise: 6
 
-// let user_input_number_1 = Number(prompt("Enter a first number: "));
-// let user_input_number_2 = Number(prompt("Enter a second number: "));
+let user_input_number_1 = Number(prompt("Enter a first number: "));
+let user_input_number_2 = Number(prompt("Enter a second number: "));
 
-// let operation = prompt("Enter the operation: 'e.g., +, -, *, /'");
+let operation = prompt("Enter the operation: 'e.g., +, -, *, /'");
 
-// switch (operation) {
-//     case "+":
-//         alert(`The sum of ${user_input_number_1} and ${user_input_number_2} is ${user_input_number_1 + user_input_number_2}`);
-//         break;
+switch (operation) {
+    case "+":
+        alert(`The sum of ${user_input_number_1} and ${user_input_number_2} is ${user_input_number_1 + user_input_number_2}`);
+        break;
 
-//     case "-":
-//         alert(`The difference of ${user_input_number_1} and ${user_input_number_2} is ${user_input_number_1 - user_input_number_2}`);
-//         break;
+    case "-":
+        alert(`The difference of ${user_input_number_1} and ${user_input_number_2} is ${user_input_number_1 - user_input_number_2}`);
+        break;
 
-//     case "*":
-//         alert(`The product of ${user_input_number_1} and ${user_input_number_2} is ${user_input_number_1 * user_input_number_2}`);
-//         break;
+    case "*":
+        alert(`The product of ${user_input_number_1} and ${user_input_number_2} is ${user_input_number_1 * user_input_number_2}`);
+        break;
 
-//     case "/":
-//         alert(`The division of ${user_input_number_1} and ${user_input_number_2} is ${user_input_number_1 / user_input_number_2}`);
-//         break;
+    case "/":
+        alert(`The division of ${user_input_number_1} and ${user_input_number_2} is ${user_input_number_1 / user_input_number_2}`);
+        break;
 
-//     default:
-//         alert("Invalid input.");
-//         break;
-// }
+    default:
+        alert("Invalid input.");
+        break;
+}
