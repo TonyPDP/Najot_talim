@@ -21,8 +21,8 @@ let game_is_on = true;
 // Generate a random integer between 1 and 100
 const randomInteger = Math.floor(Math.random() * 100) + 1;
 
-let lowerBound = 1; 
-let upperBound = 100; 
+let lowerBound = 1;
+let upperBound = 100;
 
 let user_input = Number(prompt("🎮 Choose a difficulty level (1, 2, or 3):"));
 
@@ -52,14 +52,14 @@ while (game_is_on) {
         alert(`🎉 Congratulations! You guessed the number ${randomInteger} correctly with ${lives} lives remaining! 🎊`);
         game_is_on = false;
     } else if (user_guess > randomInteger) {
-        upperBound = user_guess - 1; 
+        upperBound = user_guess - 1;
         alert(`📉 Too High! Try a number between ${lowerBound} and ${upperBound}. Lives remaining: ${lives}`);
     } else if (user_guess < randomInteger) {
-        lowerBound = user_guess + 1; 
+        lowerBound = user_guess + 1;
         alert(`📈 Too Low! Try a number between ${lowerBound} and ${upperBound}. Lives remaining: ${lives}`);
     }
 
-    lives--; 
+    lives--;
 
     if (lives === 0) {
         alert(`💀 Game Over! You ran out of lives. The correct number was ${randomInteger}. Better luck next time!`);
