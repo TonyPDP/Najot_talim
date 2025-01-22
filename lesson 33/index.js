@@ -82,7 +82,9 @@ while (orderIsOn) {
     }
     if (menu.meals[userInputMeal] !== undefined) {
         let mealPrice = menu.meals[userInputMeal];
-        alert(`Your order successfully added: \n1 ${userInputMeal} --- $${mealPrice.toFixed(2)}`);
+        howManyMeal = Number(prompt(`How many ${userInputMeal} would you like ? `))
+        mealPrice += howManyMeal * mealPrice
+        alert(`Your order successfully added: \n ${howManyMeal} ${userInputMeal} --- $${mealPrice.toFixed(2)}`);
         totalMeal += mealPrice;
     } else {
         alert("Meal not found. Please choose from the menu in the console.");
@@ -96,7 +98,9 @@ while (orderIsOn) {
     }
     if (menu.drinks[userInputDrink] !== undefined) {
         let drinkPrice = menu.drinks[userInputDrink];
-        alert(`Your order successfully added: \n1 ${userInputDrink} --- $${drinkPrice.toFixed(2)}`);
+        howManyDrink = Number(prompt(`How many ${userInputDrink} would you like ?`))
+        drinkPrice += howManyDrink * drinkPrice
+        alert(`Your order successfully added: \n ${howManyDrink} ${userInputDrink} --- $${drinkPrice.toFixed(2)}`);
         totalDrink += drinkPrice;
     } else {
         alert("Drink not found. Please choose from the menu in the console.");
@@ -116,3 +120,44 @@ while (orderIsOn) {
         alert(`Thank you for your order! Your final total is: $${(totalMeal + totalDrink).toFixed(2)}`);
     }
 }
+
+
+
+//$$$$ 4 digit number $$$$//
+
+
+// // let num = 3456;
+
+
+// // let num_4 = num % 10; 
+// // let end = parseInt(num / 10); 
+// // let third_num = end % 10; 
+// // end = parseInt(end / 10); 
+// // let second_num = end % 10; 
+// // let first_num = parseInt(end / 10); 
+
+// // let reversed_num = (num_4 * 1000) + (third_num * 100) + (second_num * 10) + first_num;
+
+// // console.log("Original Number:", num);
+// // console.log("Reversed Number:", reversed_num);
+// // console.log("First Digit:", first_num);
+// // console.log("Second Digit:", second_num);
+// // console.log("Third Digit:", third_num);
+// // console.log("Fourth Digit:", num_4);
+
+
+// let num_1 = 34;
+// let num_2 = 54;
+// let num_3 = 14;
+// let the_greatest = 0;
+
+// if (num_1 > num_2 && num_1 > num_3) {
+//     the_greatest = num_1;
+// } 
+// else if (num_2 > num_1 && num_2 > num_3) {
+//     the_greatest = num_2;
+// } 
+// else {
+//     the_greatest = num_3;
+// }
+// console.log(`The greatest number is: ${the_greatest}`);
